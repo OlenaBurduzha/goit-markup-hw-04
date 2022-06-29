@@ -382,7 +382,7 @@ margin-right: 10px;
    border-radius: 4px;
    width: 170px;
    height: 92px;
-  
+   color: var(--icon-color);  
 }
 
 .clients-items:hover,
