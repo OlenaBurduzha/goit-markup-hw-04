@@ -101,6 +101,7 @@ color: var(--accent-color);
 
 .site-nav, .contacts {
     display: flex;
+    align-items: center;
 }
 
 .site-nav {
@@ -131,6 +132,10 @@ letter-spacing: 0.02em;
 color: var(--accent-color);
 }
 
+.heder-contacts {
+    display: flex;
+    align-items: center;
+}
 .contacts {
     margin-left: 305px;
   
@@ -147,6 +152,8 @@ margin-right: 30px;
 }
 
 .contacts-link {
+    display: flex;
+    align-items: center;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -354,13 +361,9 @@ margin-right: 10px;
 }
 
 .social-media-icon {
-    fill: var(--icon-color);
+    fill: currentColor;
 }
 
-.social-media-icon:hover,
-.social-media-icon:focus {
-    fill: var(--background-heder-color);
-}
 
 /*clients*/
 .title-clients {
@@ -414,6 +417,7 @@ footer {
 }
 .container-footer {
     display: flex;
+    align-items: baseline;
 }
 .address-container {
     margin-right: 72px;
