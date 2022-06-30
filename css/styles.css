@@ -79,6 +79,7 @@ a {
 .heder, .main-nav {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo {
@@ -110,16 +111,19 @@ color: var(--accent-color);
 }
 .site-nav .link,
 .contacts .contacts-link{
-display: block;
+display: flex;
+align-items: center;
+justify-content: center;
 padding-top: 32px;
 padding-bottom: 32px;
-
-color:var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
+.site-nav .link{
+color: var(--title-text-color);
+} 
 
 .site-nav .item:not(:last-child)
 {
@@ -140,26 +144,20 @@ color: var(--accent-color);
     margin-left: 305px;
   
 }
-
+/*
 .contacts-item {
     display: inline;
     align-items: center;
     justify-content: center;
 }
+*/
 
 .contacts .item:not(:last-child){
 margin-right: 30px;
 }
 
 .contacts-link {
-    display: flex;
-    align-items: center;
     color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em; 
-   
 }
 
 .contacts-link:hover,
@@ -197,7 +195,7 @@ margin-right: 30px;
    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/img-hero/Img-hero.jpg); 
    background-repeat:no-repeat;
    background-position: center;
-   background-size:contain;
+   background-size:cover;
 
 }
 
@@ -517,7 +515,7 @@ margin-right: 8px;
    }
    .card-set-item:hover,
    .card-set-item:focus {
-    border: 1px solid var(--portfolio-card-title-color);
+    
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
      1px 4px 6px rgba(0, 0, 0, 0.16);
